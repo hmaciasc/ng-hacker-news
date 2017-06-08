@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { HackerNewsAPIService } from '../hackernews-api.service';
-
 @Component({
   selector: 'item',
   templateUrl: './item.component.html',

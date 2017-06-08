@@ -11,6 +11,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
 
 import { HackerNewsAPIService } from './hackernews-api.service';
+import { ItemCommentsComponent } from './item-comments/item-comments.component';
+
+import { routing } from './app.routes';
+import { CommentComponent } from './comment/comment.component';
+import { CommentTreeComponent } from './comment-tree/comment-tree.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +23,16 @@ import { HackerNewsAPIService } from './hackernews-api.service';
     HeaderComponent,
     StoriesComponent,
     FooterComponent,
-    ItemComponent
+    ItemComponent,
+    ItemCommentsComponent,
+    CommentComponent,
+    CommentTreeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [HackerNewsAPIService],
   bootstrap: [AppComponent]
